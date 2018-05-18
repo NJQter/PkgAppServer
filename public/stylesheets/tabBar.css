@@ -1,0 +1,19 @@
+.tabBar {
+    background-color: lightgoldenrodyellow;
+    display: flex;
+    height: 44px;
+}
+
+.tabBarItem {
+    background-color: bisque;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.tabBarItem:hover {
+    background-color: blue;
+    color: white;
+}

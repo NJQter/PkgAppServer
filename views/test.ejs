@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="/stylesheets/tabBar.css"/>
+    <script type="text/javascript" src="/javascripts/ejs.min.js"></script>
+    <script>
+        let dataStr = '<%- JSON.stringify(data) %>';
+        let _tabs = JSON.parse(dataStr).tabs;
+    </script>
+    <script type="text/javascript" src="/javascripts/tabBar.js"></script>
+</head>
+<body style="background-color:lightgoldenrodyellow">
+    <%- include('./tabBar',{tabs:data.tabs}) %>
+</body>
+</html>

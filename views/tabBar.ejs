@@ -1,0 +1,9 @@
+<div class="tabBar" id="tabBar">
+    <% tabs.forEach(function (tab) { %>
+    <div class="tabBarItem" onclick="onTabItemClicked()">
+        <div>
+            <%= tab.name %>
+        </div>
+    </div>
+    <% }) %>
+</div>
